@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MegaMart.dev | Enterprise Sandbox Storefront</title>
+    <link rel="stylesheet" href="shop-style.css">
+</head>
+<body>
+
+    <header>
+        <a href="#" class="store-logo">📦 MEGAMART.DEV</a>
+        <div class="header-checkout-controls">
+            <div class="cart-metric-badge">
+                🛒 <span id="global-cart-qty">0</span> Items — ৳<span id="global-cart-sum">0</span>
+            </div>
+            <button class="gateway-trigger-btn" onclick="executeSSLCommerzSandbox()">💳 Checkout Now</button>
+        </div>
+    </header>
+
+    <div class="shop-layout-wrapper">
+        
+        <aside class="category-sidebar">
+            <h3 class="sidebar-heading">Popular Categories</h3>
+            <ul class="sidebar-list">
+                <li class="sidebar-item active" onclick="filterCategory('all')">All Electronics</li>
+                <li class="sidebar-item" onclick="filterCategory('audio')">Audio & Acoustics</li>
+                <li class="sidebar-item" onclick="filterCategory('wearables')">Smart Wearables</li>
+                <li class="sidebar-item" onclick="filterCategory('computing')">Computer Hardware</li>
+                <li class="sidebar-item" onclick="filterCategory('power')">Power & Charging</li>
+            </ul>
+        </aside>
+
+        <main class="store-main-deck">
+            <div class="marketing-jumbotron">
+                <h2>Enterprise E-Commerce Solutions Portal</h2>
+                <p>A Website made By Debarjun Chakma</p>
+            </div>
+
+            <div class="inventory-display-grid" id="dynamic-shop-floor"></div>
+        </main>
+
+    </div>
+
+    <script src="shop-core.js"></script>
+</body>
+</html>
